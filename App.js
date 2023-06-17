@@ -1,33 +1,36 @@
 import { Dimensions, ImageBackground, StyleSheet, Text, View } from 'react-native';
 import ConnectToHealthButton from './src/components/ConnectToHealthButton';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { WavesBackground } from './assets';
+import { StatusBar } from 'expo-status-bar';
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <ImageBackground source={WavesBackground} resizeMode='cover' style={styles.backgroundImage}>
-        <ConnectToHealthButton />
-        <Text>We use health data to check your heart rate variance.</Text>
-      </ImageBackground>
-    </View>
+    <SafeAreaProvider>
+      <SafeAreaView style={styles.container} edges={['top', 'right', 'left']}>
+        <ImageBackground source={WavesBackground} style={styles.bgImage}>
+          <ConnectToHealthButton />
+        </ImageBackground>        
+      </SafeAreaView>
+      <StatusBar style="dark" />
+    </SafeAreaProvider>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    // alignItems: 'center',
-    // justifyContent: 'center',
-    zIndex: 1
-  },
-  backgroundImage: {
-    display: 'grid',
-    gridTemplateRows: 'auto',
-    gridTemplateColumns: '1fr 2fr 1fr',
-    placeItems: 'center',
+    boxSizing: 'border-box',
+    display: 'flex',
     height: Dimensions.get('window').height,
     width: Dimensions.get('window').width,
-    zIndex: 0
+    border: '1px solid red'
+  },
+  bgImage: {
+    flex: 1,
+    resizeMode: 'cover',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 10
   }
 });
