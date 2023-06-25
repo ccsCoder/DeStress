@@ -10,7 +10,6 @@
 		FCEA51B82A41D6CF00EA606C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51B72A41D6CF00EA606C /* ProfileView.swift */; };
 		FCEA51BA2A41D7FF00EA606C /* TodoListVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51B92A41D7FF00EA606C /* TodoListVIew.swift */; };
 		FCEA51BC2A41D88400EA606C /* NewTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51BB2A41D88400EA606C /* NewTodoView.swift */; };
-		FCEA51BE2A41D89600EA606C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51BD2A41D89600EA606C /* LoginView.swift */; };
 		FCEA51C02A41D8A700EA606C /* AccountRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51BF2A41D8A700EA606C /* AccountRegistrationView.swift */; };
 		FCEA51C22A41D8BE00EA606C /* ToDoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51C12A41D8BE00EA606C /* ToDoItemView.swift */; };
 		FCEA51C42A41D9B100EA606C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51C32A41D9B100EA606C /* User.swift */; };
@@ -30,13 +29,14 @@
 		FCED26262A408CE4008E5353 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FCED26252A408CE4008E5353 /* FirebaseFirestore */; };
 		FCED26282A408CE4008E5353 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FCED26272A408CE4008E5353 /* FirebaseFirestoreSwift */; };
 		FCED262C2A41428C008E5353 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCED262B2A41428C008E5353 /* GoogleService-Info.plist */; };
+		FCFFC87F2A45C5DC00BD71F9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFFC87E2A45C5DC00BD71F9 /* LoginView.swift */; };
+		FCFFC8812A4881B400BD71F9 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFFC8802A4881B400BD71F9 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FCEA51B72A41D6CF00EA606C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		FCEA51B92A41D7FF00EA606C /* TodoListVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListVIew.swift; sourceTree = "<group>"; };
 		FCEA51BB2A41D88400EA606C /* NewTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodoView.swift; sourceTree = "<group>"; };
-		FCEA51BD2A41D89600EA606C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FCEA51BF2A41D8A700EA606C /* AccountRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRegistrationView.swift; sourceTree = "<group>"; };
 		FCEA51C12A41D8BE00EA606C /* ToDoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemView.swift; sourceTree = "<group>"; };
 		FCEA51C32A41D9B100EA606C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -54,6 +54,8 @@
 		FCED26182A408C26008E5353 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCED261B2A408C26008E5353 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FCED262B2A41428C008E5353 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FCFFC87E2A45C5DC00BD71F9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FCFFC8802A4881B400BD71F9 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,12 +76,13 @@
 			isa = PBXGroup;
 			children = (
 				FCED26162A408C25008E5353 /* MainView.swift */,
+				FCFFC87E2A45C5DC00BD71F9 /* LoginView.swift */,
 				FCEA51B72A41D6CF00EA606C /* ProfileView.swift */,
 				FCEA51B92A41D7FF00EA606C /* TodoListVIew.swift */,
 				FCEA51BB2A41D88400EA606C /* NewTodoView.swift */,
-				FCEA51BD2A41D89600EA606C /* LoginView.swift */,
 				FCEA51BF2A41D8A700EA606C /* AccountRegistrationView.swift */,
 				FCEA51C12A41D8BE00EA606C /* ToDoItemView.swift */,
+				FCFFC8802A4881B400BD71F9 /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,7 +230,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCEA51C62A41D9BD00EA606C /* TodoItem.swift in Sources */,
-				FCEA51BE2A41D89600EA606C /* LoginView.swift in Sources */,
 				FCEA51CC2A41D9F600EA606C /* TodoListViewModel.swift in Sources */,
 				FCED26172A408C25008E5353 /* MainView.swift in Sources */,
 				FCEA51B82A41D6CF00EA606C /* ProfileView.swift in Sources */,
@@ -237,6 +239,8 @@
 				FCEA51CE2A41DA0700EA606C /* NewTodoViewModel.swift in Sources */,
 				FCEA51D02A41DA1000EA606C /* LoginViewModel.swift in Sources */,
 				FCEA51CA2A41D9EE00EA606C /* ProfileViewModel.swift in Sources */,
+				FCFFC8812A4881B400BD71F9 /* HeaderView.swift in Sources */,
+				FCFFC87F2A45C5DC00BD71F9 /* LoginView.swift in Sources */,
 				FCEA51C42A41D9B100EA606C /* User.swift in Sources */,
 				FCEA51C22A41D8BE00EA606C /* ToDoItemView.swift in Sources */,
 				FCED26152A408C25008E5353 /* ForgetMeNotApp.swift in Sources */,
