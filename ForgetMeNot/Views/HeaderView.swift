@@ -8,23 +8,30 @@
 import SwiftUI
 
 struct HeaderView: View {
+  // Parameterising header details as in props
+  let title: String
+  let subTitle: String
+  let background: Color
+  var angle: Double = -15
+  
+  
   var body: some View {
     // Header
     ZStack(alignment: .center) {
       RoundedRectangle(cornerRadius: 20)
-        .foregroundColor(.mint)
-        .rotationEffect(Angle(degrees: -15))
+        .foregroundColor(background)
+        .rotationEffect(Angle(degrees: angle))
       // Title text
-      VStack {
-        Text("Forget Me Not")
+      VStack (alignment: .center) {
+        Text(title)
           .font(.largeTitle)
-          .foregroundColor(.black)
+          .padding(5)
+          .foregroundColor(.white)
           .bold()
 
-        Text("Never forget your chores anymore")
-          .font(.subheadline)
+        Text(subTitle)
+          .font(.title2)
           .foregroundColor(.white)
-          .padding(.top, 0.1)
       }
       .padding(.top, 30)
     }
@@ -35,6 +42,6 @@ struct HeaderView: View {
 
 struct Header_Previews: PreviewProvider {
   static var previews: some View {
-    HeaderView()
+    HeaderView(title: "Forget Me Not", subTitle: "Never forget your chores!", background: Color.mint)
   }
 }
