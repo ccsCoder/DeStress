@@ -23,22 +23,8 @@ struct LoginView: View {
           // password
           SecureField("Password", text: $password)
             .textFieldStyle(DefaultTextFieldStyle())
-          // Log in button
-          Button(action: {
-            
-          }) {
-            HStack(alignment: .center, spacing: 5) {
-              Spacer()
-              // look
-              Text("Sign In")
-                .font(.subheadline)
-                .bold()
-                .padding(12)
-                .background(Color.accentColor)
-                .cornerRadius(10)
-                .foregroundColor(.white)
-            }
-          }
+          
+          SolidButtonView(buttonLabel: "Sign In", clickHandler: {})
         }
         
         // Create Account
