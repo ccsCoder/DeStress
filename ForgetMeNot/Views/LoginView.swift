@@ -9,8 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
   // UI Binding variables.
-  @State var email = ""
-  @State var password = ""
+  @StateObject var loginVM = LoginViewModel()
   
   var body: some View {
     NavigationView {
@@ -18,19 +17,25 @@ struct LoginView: View {
         HeaderView(title: "Forget Me Not", subTitle: "Never forget your chores!", background: Color.mint)
         // Login Form
         Form {
-          TextField("Email Address", text: $email)
+          // Display error Message if needed.
+          if !loginVM.errorMessage.isEmpty {
+            AlertView(message: loginVM.errorMessage, type: .Error)
+          }
+          TextField("Email Address", text: $loginVM.email)
             .textFieldStyle(DefaultTextFieldStyle())
+            .autocorrectionDisabled().autocapitalization(.none)
           // password
-          SecureField("Password", text: $password)
+          SecureField("Password", text: $loginVM.password)
             .textFieldStyle(DefaultTextFieldStyle())
+            .autocorrectionDisabled().autocapitalization(.none)
           
-          SolidButtonView(buttonLabel: "Sign In", clickHandler: {})
+          SolidButtonView(buttonLabel: "Sign In", clickHandler: loginVM.login)
         }
         
         // Create Account
-        VStack {
+        VStack(spacing: 5) {
           Text("New to Forget Me Not ?")
-          NavigationLink("Create your account now !", destination: AccountRegistrationView())
+          NavigationLink("Create your account now !", destination: AccountRegistrationView()).font(.footnote)
         }
         Spacer()
       }

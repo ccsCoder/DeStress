@@ -15,18 +15,21 @@ struct AccountRegistrationView: View {
   @State var confirmPassword: String = ""
 
   var body: some View {
-    VStack {
-      HeaderView(title: "Register", subTitle: "Start organising chores", background: .teal, angle: 10)
+    VStack(alignment: .center, spacing: 10) {
+      HeaderView(title: "Register", subTitle: "Start organising chores", background: .orange)
+      
       Form {
         TextField("Full name", text: $name)
-        TextField("Email", text: $email)
-        SecureField("Password", text: $password)
-        SecureField("Re-Enter password", text: $confirmPassword)
+        // prevent auto capitalisatin & correction
+        TextField("Email", text: $email).autocorrectionDisabled().autocapitalization(.none)
+        // same for passwords or it will be really weird.
+        SecureField("Password", text: $password).autocorrectionDisabled().autocapitalization(.none)
+        SecureField("Re-Enter password", text: $confirmPassword).autocorrectionDisabled().autocapitalization(.none)
         SolidButtonView(buttonLabel: "Create account", clickHandler: {}, buttonColor: .green)
       }
       
       Spacer()
-    }
+    }.offset(y: -50)
   }
 }
 

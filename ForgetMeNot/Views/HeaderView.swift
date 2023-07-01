@@ -12,7 +12,7 @@ struct HeaderView: View {
   let title: String
   let subTitle: String
   let background: Color
-  var angle: Double = -15
+  var angle: Double = -10
   
   
   var body: some View {
@@ -35,7 +35,7 @@ struct HeaderView: View {
       }
       .padding(.top, 30)
     }
-    .frame(width: UIScreen.main.bounds.width * 2, height: UIScreen.main.bounds.height / 3)
+    .frame(width: UIScreen.main.bounds.width * 2, height: UIScreen.main.bounds.height / 2.5)
     .offset(y: -100)
   }
 }
