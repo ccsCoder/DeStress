@@ -35,7 +35,9 @@ struct LoginView: View {
         // Create Account
         VStack(spacing: 5) {
           Text("New to Forget Me Not ?")
-          NavigationLink("Create your account now !", destination: AccountRegistrationView()).font(.footnote)
+          NavigationLink("Create your account now !", destination: AccountRegistrationView())
+            .font(.footnote)
+            .toolbarBackground(.white)
         }
         Spacer()
       }
