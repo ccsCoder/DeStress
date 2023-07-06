@@ -9,9 +9,17 @@ import SwiftUI
 //import LoginView
 
 struct MainView: View {
+  @StateObject var mainVM = MainViewModel()
+  
   var body: some View {
       VStack {
-        LoginView()
+        // If user is already logged in, do not show main view, instead, show the TODOs view.
+        if !mainVM.currUserId.isEmpty {
+          TodoListView()
+        } else {
+          LoginView()
+        }
+        
       }
   }
 }

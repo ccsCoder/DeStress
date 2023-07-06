@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import FirebaseAuth
+import FirebaseFirestore
 
 class AccountRegistrationVM: ObservableObject {
   @Published var name: String = ""
@@ -24,6 +26,23 @@ class AccountRegistrationVM: ObservableObject {
       return
     }
     // register here...
+    Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
+      guard let userId = result?.user.uid else {
+        self?.errorMessage = "Error: \(String(describing: error?.localizedDescription))"
+        return
+      }
+      // Insert a user record in Firebase
+      self?.insertUserRecord(id: userId)
+    }
+  }
+  
+  private func insertUserRecord(id: String) {
+    let newUser = User(id: id, name: name, email: email, joiningDate: Date().timeIntervalSince1970)
+    
+    // Firebase specific thingy
+    let db = Firestore.firestore()
+    db.collection("users").document(id).setData(newUser.asDictionary())
+    
   }
   
   private func validate() -> Bool {

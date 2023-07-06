@@ -14,13 +14,13 @@ struct AccountRegistrationView: View {
   var body: some View {
     VStack(alignment: .center, spacing: 10) {
       HeaderView(title: "Register", subTitle: "Start organising chores", background: .orange)
-      
+
       Form {
         // Error Message
         if !registerVM.errorMessage.isEmpty {
           AlertView(message: registerVM.errorMessage, type: .Error)
         }
-        
+
         TextField("Full name", text: $registerVM.name)
         // prevent auto capitalisatin & correction
         TextField("Email", text: $registerVM.email).autocorrectionDisabled().autocapitalization(.none)
@@ -29,7 +29,7 @@ struct AccountRegistrationView: View {
         SecureField("Re-Enter password", text: $registerVM.confirmPassword).autocorrectionDisabled().autocapitalization(.none)
         SolidButtonView(buttonLabel: "Create account", clickHandler: registerVM.register, buttonColor: .green)
       }
-      
+
       Spacer()
     }.offset(y: -50)
   }
