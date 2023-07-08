@@ -11,6 +11,7 @@ struct SolidButtonView: View {
   let buttonLabel: String
   let clickHandler: () -> Void
   var buttonColor: Color = .accentColor
+  var disabled: Bool = false
   
   var body: some View {
     // Log in button
@@ -25,11 +26,10 @@ struct SolidButtonView: View {
           .padding(10)
           .background(Color.white)
           .cornerRadius(5)
-          .foregroundColor(buttonColor)
+          .foregroundColor(disabled ? .gray : buttonColor)
           .frame(maxWidth: .infinity, alignment: .center)
       }
-      
-    }
+    }.disabled(disabled)
   }
 }
 

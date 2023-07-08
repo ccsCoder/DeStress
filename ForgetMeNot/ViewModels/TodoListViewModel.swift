@@ -6,3 +6,18 @@
 //
 
 import Foundation
+
+class TodoListVM: ObservableObject {
+  @Published var showNewTaskSheet = false
+  
+  public func show() {
+    showNewTaskSheet = true
+    print("Shown = ", showNewTaskSheet)
+  }
+  
+  public func hide() {
+    showNewTaskSheet = false
+  }
+  
+  init() {}
+}
