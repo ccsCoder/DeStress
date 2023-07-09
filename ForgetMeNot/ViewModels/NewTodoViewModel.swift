@@ -6,21 +6,46 @@
 //
 
 import Foundation
+import FirebaseAuth
+import FirebaseFirestore
 
 class NewTodoVM: ObservableObject {
   @Published var title:String = ""
   @Published var dueDate: Date = Date()
+  var error:String = ""
   
   init() {}
   
   public func validate() -> Bool {
-    guard !title.trimmingCharacters(in: .whitespaces).isEmpty && dueDate >= Date() else {
+    guard !title.trimmingCharacters(in: .whitespaces).isEmpty else {
+      error = "Please enter task name/title"
+      return false
+    }
+    
+    guard  dueDate >= Date() else {
+      error = "Due date cannot be in the past, unless you know how to Time Travel"
       return false
     }
     return true
   }
   
   public func save() {
-    print("Save called...")
+    // get the current user id.
+    guard let userId = Auth.auth().currentUser?.uid else {
+      error = "There was a problem getting current user details"
+      return
+    }
+    
+    // instantiate the Task Model
+    let newTask = Task(title: title, dueDate: dueDate.timeIntervalSince1970,
+                       createdOn: Date().timeIntervalSince1970, isComplete: false)
+    
+    // save.
+    Firestore.firestore().collection(Constants.DataBaseKeys.UserCollection)
+      .document(userId)
+      .collection(Constants.DataBaseKeys.TasksCollection)
+      .document(newTask.id)
+      .setData(newTask.asDictionary())
+    
   }
 }

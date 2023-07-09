@@ -12,7 +12,6 @@ class TodoListVM: ObservableObject {
   
   public func show() {
     showNewTaskSheet = true
-    print("Shown = ", showNewTaskSheet)
   }
   
   public func hide() {
