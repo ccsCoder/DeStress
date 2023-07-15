@@ -13,19 +13,19 @@
 		FC7AF6992A59956D00C9C871 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7AF6982A59956D00C9C871 /* FloatingButton.swift */; };
 		FC7AF69B2A5A46B900C9C871 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7AF69A2A5A46B900C9C871 /* Constants.swift */; };
 		FCEA51B82A41D6CF00EA606C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51B72A41D6CF00EA606C /* ProfileView.swift */; };
-		FCEA51BA2A41D7FF00EA606C /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51B92A41D7FF00EA606C /* TodoListView.swift */; };
+		FCEA51BA2A41D7FF00EA606C /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51B92A41D7FF00EA606C /* TaskListView.swift */; };
 		FCEA51BC2A41D88400EA606C /* NewTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51BB2A41D88400EA606C /* NewTodoView.swift */; };
 		FCEA51C02A41D8A700EA606C /* AccountRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51BF2A41D8A700EA606C /* AccountRegistrationView.swift */; };
-		FCEA51C22A41D8BE00EA606C /* ToDoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51C12A41D8BE00EA606C /* ToDoItemView.swift */; };
+		FCEA51C22A41D8BE00EA606C /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51C12A41D8BE00EA606C /* TaskItemView.swift */; };
 		FCEA51C42A41D9B100EA606C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51C32A41D9B100EA606C /* User.swift */; };
 		FCEA51C62A41D9BD00EA606C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51C52A41D9BD00EA606C /* Task.swift */; };
 		FCEA51C82A41D9E400EA606C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51C72A41D9E400EA606C /* MainViewModel.swift */; };
 		FCEA51CA2A41D9EE00EA606C /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51C92A41D9EE00EA606C /* ProfileViewModel.swift */; };
-		FCEA51CC2A41D9F600EA606C /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51CB2A41D9F600EA606C /* TodoListViewModel.swift */; };
-		FCEA51CE2A41DA0700EA606C /* NewTodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51CD2A41DA0700EA606C /* NewTodoViewModel.swift */; };
+		FCEA51CC2A41D9F600EA606C /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51CB2A41D9F600EA606C /* TaskListViewModel.swift */; };
+		FCEA51CE2A41DA0700EA606C /* NewTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51CD2A41DA0700EA606C /* NewTaskViewModel.swift */; };
 		FCEA51D02A41DA1000EA606C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51CF2A41DA1000EA606C /* LoginViewModel.swift */; };
 		FCEA51D22A41DA1700EA606C /* AccountRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51D12A41DA1700EA606C /* AccountRegistrationViewModel.swift */; };
-		FCEA51D42A41DA2300EA606C /* ToDoItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51D32A41DA2300EA606C /* ToDoItemViewModel.swift */; };
+		FCEA51D42A41DA2300EA606C /* TaskItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA51D32A41DA2300EA606C /* TaskItemViewModel.swift */; };
 		FCED26152A408C25008E5353 /* ForgetMeNotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED26142A408C25008E5353 /* ForgetMeNotApp.swift */; };
 		FCED26172A408C25008E5353 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED26162A408C25008E5353 /* MainView.swift */; };
 		FCED26192A408C26008E5353 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCED26182A408C26008E5353 /* Assets.xcassets */; };
@@ -45,19 +45,19 @@
 		FC7AF6982A59956D00C9C871 /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
 		FC7AF69A2A5A46B900C9C871 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FCEA51B72A41D6CF00EA606C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		FCEA51B92A41D7FF00EA606C /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
+		FCEA51B92A41D7FF00EA606C /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		FCEA51BB2A41D88400EA606C /* NewTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodoView.swift; sourceTree = "<group>"; };
 		FCEA51BF2A41D8A700EA606C /* AccountRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRegistrationView.swift; sourceTree = "<group>"; };
-		FCEA51C12A41D8BE00EA606C /* ToDoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemView.swift; sourceTree = "<group>"; };
+		FCEA51C12A41D8BE00EA606C /* TaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
 		FCEA51C32A41D9B100EA606C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FCEA51C52A41D9BD00EA606C /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		FCEA51C72A41D9E400EA606C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		FCEA51C92A41D9EE00EA606C /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
-		FCEA51CB2A41D9F600EA606C /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
-		FCEA51CD2A41DA0700EA606C /* NewTodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodoViewModel.swift; sourceTree = "<group>"; };
+		FCEA51CB2A41D9F600EA606C /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		FCEA51CD2A41DA0700EA606C /* NewTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewModel.swift; sourceTree = "<group>"; };
 		FCEA51CF2A41DA1000EA606C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FCEA51D12A41DA1700EA606C /* AccountRegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRegistrationViewModel.swift; sourceTree = "<group>"; };
-		FCEA51D32A41DA2300EA606C /* ToDoItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemViewModel.swift; sourceTree = "<group>"; };
+		FCEA51D32A41DA2300EA606C /* TaskItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemViewModel.swift; sourceTree = "<group>"; };
 		FCED26112A408C25008E5353 /* ForgetMeNot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForgetMeNot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCED26142A408C25008E5353 /* ForgetMeNotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetMeNotApp.swift; sourceTree = "<group>"; };
 		FCED26162A408C25008E5353 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -88,10 +88,10 @@
 				FCED26162A408C25008E5353 /* MainView.swift */,
 				FCFFC87E2A45C5DC00BD71F9 /* LoginView.swift */,
 				FCEA51B72A41D6CF00EA606C /* ProfileView.swift */,
-				FCEA51B92A41D7FF00EA606C /* TodoListView.swift */,
+				FCEA51B92A41D7FF00EA606C /* TaskListView.swift */,
 				FCEA51BB2A41D88400EA606C /* NewTodoView.swift */,
 				FCEA51BF2A41D8A700EA606C /* AccountRegistrationView.swift */,
-				FCEA51C12A41D8BE00EA606C /* ToDoItemView.swift */,
+				FCEA51C12A41D8BE00EA606C /* TaskItemView.swift */,
 				FCFFC8802A4881B400BD71F9 /* HeaderView.swift */,
 				FC39866C2A4D42270082CC11 /* SolidButtonView.swift */,
 				FC55F8AC2A4EFF780079479E /* AlertView.swift */,
@@ -114,11 +114,11 @@
 			children = (
 				FCEA51C72A41D9E400EA606C /* MainViewModel.swift */,
 				FCEA51C92A41D9EE00EA606C /* ProfileViewModel.swift */,
-				FCEA51CB2A41D9F600EA606C /* TodoListViewModel.swift */,
-				FCEA51CD2A41DA0700EA606C /* NewTodoViewModel.swift */,
+				FCEA51CB2A41D9F600EA606C /* TaskListViewModel.swift */,
+				FCEA51CD2A41DA0700EA606C /* NewTaskViewModel.swift */,
 				FCEA51CF2A41DA1000EA606C /* LoginViewModel.swift */,
 				FCEA51D12A41DA1700EA606C /* AccountRegistrationViewModel.swift */,
-				FCEA51D32A41DA2300EA606C /* ToDoItemViewModel.swift */,
+				FCEA51D32A41DA2300EA606C /* TaskItemViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -245,15 +245,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCEA51C62A41D9BD00EA606C /* Task.swift in Sources */,
-				FCEA51CC2A41D9F600EA606C /* TodoListViewModel.swift in Sources */,
+				FCEA51CC2A41D9F600EA606C /* TaskListViewModel.swift in Sources */,
 				FCED26172A408C25008E5353 /* MainView.swift in Sources */,
 				FCEA51B82A41D6CF00EA606C /* ProfileView.swift in Sources */,
 				FCEA51D22A41DA1700EA606C /* AccountRegistrationViewModel.swift in Sources */,
 				FC55F8AD2A4EFF780079479E /* AlertView.swift in Sources */,
 				FC7AF69B2A5A46B900C9C871 /* Constants.swift in Sources */,
-				FCEA51BA2A41D7FF00EA606C /* TodoListView.swift in Sources */,
+				FCEA51BA2A41D7FF00EA606C /* TaskListView.swift in Sources */,
 				FCEA51BC2A41D88400EA606C /* NewTodoView.swift in Sources */,
-				FCEA51CE2A41DA0700EA606C /* NewTodoViewModel.swift in Sources */,
+				FCEA51CE2A41DA0700EA606C /* NewTaskViewModel.swift in Sources */,
 				FCEA51D02A41DA1000EA606C /* LoginViewModel.swift in Sources */,
 				FCEA51CA2A41D9EE00EA606C /* ProfileViewModel.swift in Sources */,
 				FCFFC8812A4881B400BD71F9 /* HeaderView.swift in Sources */,
@@ -261,10 +261,10 @@
 				FC4C3CCF2A5640F500B700AF /* Extensions.swift in Sources */,
 				FC39866D2A4D42270082CC11 /* SolidButtonView.swift in Sources */,
 				FCEA51C42A41D9B100EA606C /* User.swift in Sources */,
-				FCEA51C22A41D8BE00EA606C /* ToDoItemView.swift in Sources */,
+				FCEA51C22A41D8BE00EA606C /* TaskItemView.swift in Sources */,
 				FCED26152A408C25008E5353 /* ForgetMeNotApp.swift in Sources */,
 				FCEA51C02A41D8A700EA606C /* AccountRegistrationView.swift in Sources */,
-				FCEA51D42A41DA2300EA606C /* ToDoItemViewModel.swift in Sources */,
+				FCEA51D42A41DA2300EA606C /* TaskItemViewModel.swift in Sources */,
 				FCEA51C82A41D9E400EA606C /* MainViewModel.swift in Sources */,
 				FC7AF6992A59956D00C9C871 /* FloatingButton.swift in Sources */,
 			);

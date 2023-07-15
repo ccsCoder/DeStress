@@ -10,9 +10,7 @@ import Foundation
 /// Identifiaable
 
 struct Task: Codable, Identifiable {
-  var id: String {
-    return UUID().uuidString
-  }
+  let id: String
   let title: String
   let dueDate: TimeInterval
   let createdOn: TimeInterval

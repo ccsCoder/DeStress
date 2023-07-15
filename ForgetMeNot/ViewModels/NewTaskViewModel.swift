@@ -9,7 +9,7 @@ import Foundation
 import FirebaseAuth
 import FirebaseFirestore
 
-class NewTodoVM: ObservableObject {
+class NewTaskVM: ObservableObject {
   @Published var title:String = ""
   @Published var dueDate: Date = Date()
   var error:String = ""
@@ -37,8 +37,13 @@ class NewTodoVM: ObservableObject {
     }
     
     // instantiate the Task Model
-    let newTask = Task(title: title, dueDate: dueDate.timeIntervalSince1970,
-                       createdOn: Date().timeIntervalSince1970, isComplete: false)
+    let newTask = Task(
+      id: UUID().uuidString,
+      title: title,
+      dueDate: dueDate.timeIntervalSince1970,
+      createdOn: Date().timeIntervalSince1970,
+      isComplete: false
+    )
     
     // save.
     Firestore.firestore().collection(Constants.DataBaseKeys.UserCollection)

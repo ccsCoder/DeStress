@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+class TaskItemVM: ObservableObject {
+  
+  func toggleIsDone(taskId: String) {
+    // implement.
+  }
+}

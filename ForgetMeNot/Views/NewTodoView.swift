@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NewTodoView: View {
-  @StateObject var newTodoVM = NewTodoVM()
+  @StateObject var newTodoVM = NewTaskVM()
   
   @Binding var showNewtaskSheetBiding: Bool
   
