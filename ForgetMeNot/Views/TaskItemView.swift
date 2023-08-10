@@ -30,7 +30,7 @@ struct TaskView: View {
       Spacer()
       // Complete / not-complete button
       Button {
-        taskItemVM.toggleIsDone(taskId: task.id)
+        taskItemVM.toggleIsDone(task: task)
       } label: {
         Image(systemName: task.isComplete ? "square.fill" : "square")
       }
